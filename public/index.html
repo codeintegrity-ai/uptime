@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <meta name="description" content="We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.">
-    <title>Eggsample Status</title>
-    <link rel="canonical" href="http://localhost:1313/">
-    <link rel="alternate" type="application/json" href="http://localhost:1313/index.json" title="Eggsample Status" />
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="Eggsample Status" />
-    <link rel="alternate" type="image/svg+xml" href="http://localhost:1313/index.svg" title="Eggsample Status" />
-    <meta name="generator" content="cState v6.0 - https://github.com/cstate/cstate">
+    <meta name="description" content="Real-time status and uptime monitoring for CodeIntegrity services. We monitor our systems 24/7 to ensure reliability.">
+    <title>CodeIntegrity Status</title>
+    <link rel="canonical" href="https://status.codeintegrity.ai/">
+    <link rel="alternate" type="application/json" href="https://status.codeintegrity.ai/index.json" title="CodeIntegrity Status" />
+    <link rel="alternate" type="application/rss+xml" href="https://status.codeintegrity.ai/index.xml" title="CodeIntegrity Status" />
+    <link rel="alternate" type="image/svg+xml" href="https://status.codeintegrity.ai/index.svg" title="CodeIntegrity Status" />
+    <meta name="generator" content="cState v6.0.1 - https://github.com/cstate/cstate">
     <meta name="theme-color" content="#0a0c0f">
     <script>
     var themeBrandColor = '#0a0c0f';
@@ -430,6 +430,7 @@
 
         .date { color: #c3bfb6; }
 
+	.tag { color: #fff; }
         .tag, .archive__head { background-color: #1d1f20; }
         .tag:hover { background: #222; }
         .issue:hover,
@@ -474,9 +475,9 @@
 
 <div class="header">
   <div class="contain">
-    <a href="http://localhost:1313/" class="header__logo header__logo--small">
+    <a href="https://status.codeintegrity.ai/" class="header__logo header__logo--small">
       
-        <img src="/logo.png" alt="Eggsample Status">
+        <img src="/logo.svg" alt="CodeIntegrity Status">
           
     </a>
   </div>
@@ -521,7 +522,7 @@
 				</button>
 				<div class="subscribe-dropdown hidden" aria-label="Close dropdown">
 					<ul>
-						<a href="http://localhost:1313//index.xml" target="_blank" rel="noopener noreferrer">
+						<a href="https://status.codeintegrity.ai//index.xml" target="_blank" rel="noopener noreferrer">
 						<li>
 							<svg viewBox="0 0 512 512" class="subscribe-dropdown__icon">
 								<path d="M108.56 342.78a60.34 60.34 0 1 0 60.56 60.44 60.63 60.63 0 0 0-60.56-60.44Z">
@@ -857,7 +858,7 @@
 							modalTitle.textContent = 'RSS';
 							modalContent.innerHTML = `<p>Subscribe to updates from this status page.</p>`;
 							modalActions.innerHTML = `
-							<a href="http:\/\/localhost:1313\//index.xml" target="_blank" rel="noopener noreferrer" class="padding-s">Open</a>
+							<a href="https:\/\/status.codeintegrity.ai\//index.xml" target="_blank" rel="noopener noreferrer" class="padding-s">Open</a>
           `;
 							break;
 
@@ -912,7 +913,7 @@
 
 						case 'api':
 							modalTitle.textContent = 'API';
-							modalContent.innerHTML = `<p>You can use our API to integrate the information and updates from this status page into your own website or application. Simply make a GET request to the following URL: <br /> <code>http:\/\/localhost:1313\/index.json</code></p>`;
+							modalContent.innerHTML = `<p>You can use our API to integrate the information and updates from this status page into your own website or application. Simply make a GET request to the following URL: <br /> <code>https:\/\/status.codeintegrity.ai\/index.json</code></p>`;
 							modalActions.innerHTML = `
             <a href="https://github.com/cstate/cstate/wiki/API" target="_blank" rel="noopener noreferrer" class="btn btn--primary">Read documentation</a>
             <p>Please note that the API may be subject to rate limiting.</p>
@@ -969,29 +970,6 @@
 
 
 
-
-  <div class="announcement-box" style="border-bottom: 0">
-    
-    
-    
-      
-      <div class="padding">
-        <p>
-          <a href="/issues/2024-02-24-maintenance-window/"><strong class="bold">Maintenance Announcement →</strong></a>
-        </p>
-
-        <p><small>
-          
-        </small></p>
-
-        <p>We will shut down our network at midnight UTC on Feb 24. This does not affect the current status.</p>
-
-        <p></p>
-      </div>
-      <hr class="clean announcement-box">
-      
-    
-  </div>
  
 
 
@@ -1015,195 +993,8 @@
 	
 
 	
-	<div class="category category--closed category--titled"
-		id="north-coast">
-		
-		<div class="bold padding clicky category__head" onclick="toggleCategoryHead(this)">
-			<span class="hide-without-js">
-				<span class="category__closed-marker">
-					<span class="sr-only">Open dropdown</span>
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-						stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
-						<polyline points="9 18 15 12 9 6"></polyline>
-					</svg>
-				</span>
-				<span class="category__open-marker">
-					<span class="sr-only">Close dropdown</span>
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-						stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
-						<polyline points="6 9 12 15 18 9"></polyline>
-					</svg>
-				</span>
-			</span>
-			<b>North Coast</b>
-			
-			<span class="tooltip tooltip--small">
-				&nbsp; <span class="faded">(?)</span>
-				<span class="tooltip__text">The main servers are located here.</span>
-			</span>
-			
-			<span class="category-status"></span>
-		</div>
-		
-
-		
-		<div class="components">
-			
-			
-			
-			
-			
-
-			<div class="component" id="system-gateway"
-				data-status="ok">
-				<a href="/affected/gateway/" class="no-underline">
-					Gateway
-				</a>
-
-				
-
-				
-
-				<span class="component-status">
-					
-					Operational
-					
-				</span>
-
-				
-
-				
-			</div>
-			
-			
-			
-			
-			
-
-			<div class="component" id="system-backup-gateway"
-				data-status="ok">
-				<a href="/affected/backup-gateway/" class="no-underline">
-					Backup Gateway
-				</a>
-
-				
-
-				
-
-				<span class="component-status">
-					
-					Operational
-					
-				</span>
-
-				
-
-				
-			</div>
-			
-		</div>
-
-		
-		<script>
-			(function () {
-				var thisCategory = document.currentScript.parentNode;
-				var componentsOfThisCategory = thisCategory.querySelectorAll('.component');
-				var highestLevelStatus = 'ok';
-
-				function checkStatus(element) {
-					var status = element.getAttribute('data-status');
-					if (status === 'down') {
-						highestLevelStatus = 'down';
-					} else if (status === 'disrupted' && highestLevelStatus !== 'down') {
-						highestLevelStatus = 'disrupted';
-					} else if (status === 'notice' && highestLevelStatus !== 'down' && highestLevelStatus !== 'disrupted') {
-						highestLevelStatus = 'notice';
-					}
-				}
-
-				componentsOfThisCategory.forEach(checkStatus);
-
-				var highestLevelStatusReadable = highestLevelStatus;
-				if (highestLevelStatus === 'ok') highestLevelStatusReadable = 'Operational';
-				else if (highestLevelStatus === 'notice') highestLevelStatusReadable = 'Maintenance';
-				else if (highestLevelStatus === 'disrupted') highestLevelStatusReadable = 'Disrupted';
-				else if (highestLevelStatus === 'down') highestLevelStatusReadable = 'Down';
-
-				if (thisCategory.classList.contains('category--titled')) {
-					thisCategory.querySelector('.category__head').setAttribute('data-status', highestLevelStatus);
-					thisCategory.querySelector('.category-status').innerHTML = highestLevelStatusReadable;
-				}
-			})();
-		</script>
-	</div>
-	
-	<div class="category category--open category--titled"
-		id="empty-category">
-		
-		<div class="bold padding clicky category__head" onclick="toggleCategoryHead(this)">
-			<span class="hide-without-js">
-				<span class="category__closed-marker">
-					<span class="sr-only">Open dropdown</span>
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-						stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
-						<polyline points="9 18 15 12 9 6"></polyline>
-					</svg>
-				</span>
-				<span class="category__open-marker">
-					<span class="sr-only">Close dropdown</span>
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-						stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
-						<polyline points="6 9 12 15 18 9"></polyline>
-					</svg>
-				</span>
-			</span>
-			<b>Empty Category</b>
-			
-			<span class="category-status"></span>
-		</div>
-		
-
-		
-		<div class="components">
-			
-		</div>
-
-		
-		<script>
-			(function () {
-				var thisCategory = document.currentScript.parentNode;
-				var componentsOfThisCategory = thisCategory.querySelectorAll('.component');
-				var highestLevelStatus = 'ok';
-
-				function checkStatus(element) {
-					var status = element.getAttribute('data-status');
-					if (status === 'down') {
-						highestLevelStatus = 'down';
-					} else if (status === 'disrupted' && highestLevelStatus !== 'down') {
-						highestLevelStatus = 'disrupted';
-					} else if (status === 'notice' && highestLevelStatus !== 'down' && highestLevelStatus !== 'disrupted') {
-						highestLevelStatus = 'notice';
-					}
-				}
-
-				componentsOfThisCategory.forEach(checkStatus);
-
-				var highestLevelStatusReadable = highestLevelStatus;
-				if (highestLevelStatus === 'ok') highestLevelStatusReadable = 'Operational';
-				else if (highestLevelStatus === 'notice') highestLevelStatusReadable = 'Maintenance';
-				else if (highestLevelStatus === 'disrupted') highestLevelStatusReadable = 'Disrupted';
-				else if (highestLevelStatus === 'down') highestLevelStatusReadable = 'Down';
-
-				if (thisCategory.classList.contains('category--titled')) {
-					thisCategory.querySelector('.category__head').setAttribute('data-status', highestLevelStatus);
-					thisCategory.querySelector('.category-status').innerHTML = highestLevelStatusReadable;
-				}
-			})();
-		</script>
-	</div>
-	
 	<div class="category category--open"
-		id="uncategorized">
+		id="services">
 		
 		<div class="padding"></div>
 		
@@ -1225,13 +1016,13 @@
 				
 				<span class="tooltip tooltip--small">
 					&nbsp; <span class="faded">(?)</span>
-					<span class="tooltip__text">The web frontend for the application.</span>
+					<span class="tooltip__text">Main website and marketing pages</span>
 				</span>
 				
 
 				
 				<span class="span-icon">
-					<a href="https://example.com/" class="external-link-style">
+					<a href="https://www.codeintegrity.ai" class="external-link-style">
 						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 							stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
 							<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -1258,50 +1049,30 @@
 			
 			
 
-			<div class="component" id="system-api"
+			<div class="component" id="system-dashboard"
 				data-status="ok">
-				<a href="/affected/api/" class="no-underline">
-					API
+				<a href="/affected/dashboard/" class="no-underline">
+					Dashboard
 				</a>
 
 				
 				<span class="tooltip tooltip--small">
 					&nbsp; <span class="faded">(?)</span>
-					<span class="tooltip__text">The guts of the application.</span>
+					<span class="tooltip__text">Application platform and user dashboard</span>
 				</span>
 				
 
 				
-
-				<span class="component-status">
-					
-					Operational
-					
+				<span class="span-icon">
+					<a href="https://app.codeintegrity.ai" class="external-link-style">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+							<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+							<polyline points="15 3 21 3 21 9"></polyline>
+							<line x1="10" y1="14" x2="21" y2="3"></line>
+						</svg>
+					</a>
 				</span>
-
-				
-
-				
-			</div>
-			
-			
-			
-			
-			
-
-			<div class="component" id="system-media-proxy"
-				data-status="ok">
-				<a href="/affected/media-proxy/" class="no-underline">
-					Media Proxy
-				</a>
-
-				
-				<span class="tooltip tooltip--small">
-					&nbsp; <span class="faded">(?)</span>
-					<span class="tooltip__text">This is the service responsible for serving images, audio, and video. It is reliant on our CDN.</span>
-				</span>
-				
-
 				
 
 				<span class="component-status">
@@ -1386,241 +1157,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-<a href="http://localhost:1313/issues/2024-02-24-maintenance-window/" class="issue no-underline">
-  
-
-  <small class="date float-right relative-time" title="February 24, 2024 at 10:35 AM UTC" data-date="2024-02-24T10:35:00Z">
-      
-        February 24, 2024 at 10:35 AM UTC
-      
-    </small>
-
-    <h3>
-      Maintenance Announcement  ℹ
-    </h3>
-
-  
-</a>
-
-
-
-
-
-
-
-
-
-<a href="http://localhost:1313/issues/2019-10-08-testing-new-pipeline/" class="issue no-underline">
-  
-    <small class="date float-right relative-time" title="October 5, 2019 at 4:24 PM UTC" data-date="2019-10-05T16:24:00Z">
-      
-        October 5, 2019 at 4:24 PM UTC
-      
-    </small>
-
-    <h3>
-      New Pipeline Rollout
-    </h3>
-
-    
-    
-    
-
-    
-	
-	
-	
-	
-	
-	
-
-	<div
-		class="ok">
-		
-		Resolved after 
-		
-		34m
-		
-		
-	</div>
-
-  
-</a>
-
-
-
-
-
-
-
-
-
-<a href="http://localhost:1313/issues/i-testing-cstate-functions/" class="issue no-underline">
-  
-
-  <small class="date float-right relative-time" title="October 4, 2019 at 6:05 PM UTC" data-date="2019-10-04T18:05:00Z">
-      
-        October 4, 2019 at 6:05 PM UTC
-      
-    </small>
-
-    <h3>
-      Testing New cState Features  ℹ
-    </h3>
-
-  
-</a>
-
-
-
-
-
-
-
-
-
-<a href="http://localhost:1313/issues/2018-05-25-us-east-conn-issues/" class="issue no-underline">
-  
-    <small class="date float-right relative-time" title="April 25, 2018 at 4:13 AM UTC" data-date="2018-04-25T04:13:00Z">
-      
-        April 25, 2018 at 4:13 AM UTC
-      
-    </small>
-
-    <h3>
-      US East Connection Issues
-    </h3>
-
-    
-    
-    
-
-    
-	
-	
-	
-	
-	
-	
-
-	<div
-		class="faded">
-		
-		Resolved
-		in under a minute
-		
-	</div>
-
-  
-</a>
-
-
-
-
-
-
-
-
-
-<a href="http://localhost:1313/issues/2018-04-13-unavailable-guilds-connection-issues/" class="issue no-underline">
-  
-    <small class="date float-right relative-time" title="April 13, 2018 at 3:54 PM UTC" data-date="2018-04-13T15:54:00Z">
-      
-        April 13, 2018 at 3:54 PM UTC
-      
-    </small>
-
-    <h3>
-      Unavailable Guilds &amp; Connection Issues
-    </h3>
-
-    
-    
-    
-
-    
-	
-	
-	
-	
-	
-	
-
-	<div
-		class="warning">
-		
-		Resolved after 
-		1h 
-		36m
-		
-		of downtime
-		
-		
-	</div>
-
-  
-</a>
-
-
-
-
-
-
-
-
-
-<a href="http://localhost:1313/issues/2018-01-17-sending-dms-impacted/" class="issue no-underline">
-  
-    <small class="date float-right relative-time" title="December 17, 2017 at 4:24 PM UTC" data-date="2017-12-17T16:24:00Z">
-      
-        December 17, 2017 at 4:24 PM UTC
-      
-    </small>
-
-    <h3>
-      Issues Sending DMs
-    </h3>
-
-    
-    
-    
-
-    
-	
-	
-	
-	
-	
-	
-
-	<div
-		class="ok">
-		
-		Resolved after 
-		
-		34m
-		
-		
-	</div>
-
-  
-</a>
-
-
-
-
-
+<div class="padding"></div>
+<h3>Is it the calm before the storm?</h3>
+<p>This status page has no logged incidents. This may be because the status page owner (or owners) have recently set up their status page, have had no downtime, or have not logged any downtime.</p>
+<div class="padding"></div>
+<div class="padding"></div>
+<div class="padding"></div>
 
       <div class="padding"></div>
     </div>
@@ -1630,7 +1172,7 @@
   
 
 
-  console.log('cState v6.0 - https://github.com/cstate/cstate');
+  console.log('cState v6.0.1 - https://github.com/cstate/cstate');
   document.getElementsByTagName('html')[0].className = 'js';
 
   
@@ -1753,11 +1295,11 @@
 
 <div class="footer">
   <div class="contain">
-    <p><strong class="bold">&copy; Eggsample Status, 2025</strong>
+    <p><strong class="bold">&copy; CodeIntegrity Status, 2026</strong>
        &nbsp; • &nbsp; <a href="#">Back to top</a>
     </p>
 
-    <p>We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.</p>
+    <p>Real-time status and uptime monitoring for CodeIntegrity services. We monitor our systems 24/7 to ensure reliability.</p>
 
     
     <small class="footer__copyright faded">Powered by <a href="https://github.com/cstate/cstate"><b>cState</b></a></small>
@@ -1770,7 +1312,7 @@
           ⚡
           Subscribe via RSS —
           
-            <a href="http://localhost:1313/index.xml" class="no-underline">to all updates</a>
+            <a href="https://status.codeintegrity.ai/index.xml" class="no-underline">to all updates</a>
           
           
         </small>

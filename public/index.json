@@ -1,29 +1,16 @@
 {
   "is": "index",
-  "cStateVersion": "6.0",
+  "cStateVersion": "6.0.1",
   "apiVersion": "2.0",
-  "title": "Eggsample Status",
+  "title": "CodeIntegrity Status",
   "languageCodeHTML": "en",
   "languageCode": "en",
-  "baseURL": "http://localhost:1313/",
-  "description": "We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.",
+  "baseURL": "https://status.codeintegrity.ai/",
+  "description": "Real-time status and uptime monitoring for CodeIntegrity services. We monitor our systems 24/7 to ensure reliability.",
   "summaryStatus": "ok",
   "categories": [
       {
-        "name": "North Coast",
-        "description": "The main servers are located here.",
-        "hideTitle": false,
-        "closedByDefault": true
-      }
-    ,
-      {
-        "name": "Empty Category",
-        "hideTitle": false,
-        "closedByDefault": false
-      }
-    ,
-      {
-        "name": "Uncategorized",
+        "name": "Services",
         "hideTitle": true,
         "closedByDefault": false
       }
@@ -31,41 +18,13 @@
   ],
   
   
-  "pinnedIssues": [
-      {
-        "is": "issue",
-        "title": "Maintenance Announcement",
-        "createdAt": "2024-02-24 10:35:00 +0000 UTC",
-        "lastMod": "2021-10-10 17:02:38 +0300 EEST",
-        "permalink": "http://localhost:1313/issues/2024-02-24-maintenance-window/",
-        "affected": [],
-        "filename": "2024-02-24-maintenance-window.md"
-      }
-  ],
+  "pinnedIssues": [],
   "systems": [
     
       {
-        "name": "Gateway",
-        "category": "North Coast",
-        
-        "status": "ok",
-        
-        "unresolvedIssues": []
-        
-      },
-      {
-        "name": "Backup Gateway",
-        "category": "North Coast",
-        
-        "status": "ok",
-        
-        "unresolvedIssues": []
-        
-      },
-      {
         "name": "Website",
-        "description": "The web frontend for the application.",
-        "category": "Uncategorized",
+        "description": "Main website and marketing pages",
+        "category": "Services",
         
         "status": "ok",
         
@@ -73,19 +32,9 @@
         
       },
       {
-        "name": "API",
-        "description": "The guts of the application.",
-        "category": "Uncategorized",
-        
-        "status": "ok",
-        
-        "unresolvedIssues": []
-        
-      },
-      {
-        "name": "Media Proxy",
-        "description": "This is the service responsible for serving images, audio, and video. It is reliant on our CDN.",
-        "category": "Uncategorized",
+        "name": "Dashboard",
+        "description": "Application platform and user dashboard",
+        "category": "Services",
         
         "status": "ok",
         
@@ -95,15 +44,15 @@
   ],
   
 
-  "buildDate": "2025-07-30",
-  "buildTime": "17:47",
-  "buildTimezone": "EEST",
+  "buildDate": "2026-01-09",
+  "buildTime": "22:24",
+  "buildTimezone": "PST",
   "colorBrand": "#0a0c0f",
   "colorOk": "#008000",
   "colorDisrupted": "#cc4400",
   "colorDown": "#e60000",
   "colorNotice": "#24478f",
   "alwaysKeepBrandColor": "true",
-  "logo": "http://localhost:1313/logo.png",
+  "logo": "https://status.codeintegrity.ai/logo.svg",
   "googleAnalytics": "UA-00000000-1"
 }
